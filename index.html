@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정문영 | AI Agent Profile</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: #0b0f19; color: #f3f4f6; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; position: relative; }
+        body::before { content: ''; position: absolute; width: 100%; height: 100%; background-image: linear-gradient(rgba(16, 24, 48, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 24, 48, 0.5) 1px, transparent 1px); background-size: 30px 30px; z-index: 1; }
+        .agent-card { position: relative; z-index: 10; width: 420px; background: rgba(17, 25, 40, 0.75); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.125); border-radius: 24px; padding: 40px 30px; text-align: center; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 242, 254, 0.1); }
+        .status-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: #00f2fe; padding: 6px 14px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; margin-bottom: 24px; text-transform: uppercase; }
+        .status-dot { width: 8px; height: 8px; background-color: #00f2fe; border-radius: 50%; box-shadow: 0 0 10px #00f2fe; animation: pulse 2s infinite; }
+        .avatar-container { position: relative; width: 100px; height: 100px; margin: 0 auto 20px; }
+        .avatar-glow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(135deg, #00f2fe, #4facfe); opacity: 0.3; filter: blur(10px); }
+        .avatar { position: relative; width: 100%; height: 100%; border-radius: 50%; background: #1f293d; border: 2px solid #00f2fe; display: flex; justify-content: center; align-items: center; font-size: 2.3rem; color: #00f2fe; }
+        .agent-name { font-size: 1.7rem; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
+        .agent-role { font-size: 0.95rem; color: #9ca3af; margin-bottom: 24px; font-weight: 500; }
+        .agent-desc { font-size: 0.95rem; line-height: 1.7; color: #d1d5db; margin-bottom: 30px; text-align: left; background: rgba(255, 255, 255, 0.02); padding: 20px; border-radius: 12px; border-left: 4px solid #00f2fe; word-break: keep-all; }
+        .capabilities { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 30px; }
+        .tag { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.08); padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; color: #9ca3af; }
+        .connect-btn { width: 100%; background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%); border: none; padding: 14px; border-radius: 12px; color: #0b0f19; font-weight: 600; font-size: 0.95rem; cursor: pointer; box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3); }
+        @keyframes pulse { 0% { transform: scale(0.95); opacity: 0.5; } 70% { transform: scale(1); opacity: 1; } 100% { transform: scale(0.95); opacity: 0.5; } }
+    </style>
+</head>
+<body>
+    <div class="agent-card">
+        <div class="status-badge"><span class="status-dot"></span>Challenge Participant</div>
+        <div class="avatar-container"><div class="avatar-glow"></div><div class="avatar">🚀</div></div>
+        <h1 class="agent-name">정문영</h1>
+        <p class="agent-role">충북대학교 건축공학과</p>
+        <div class="agent-desc">
+            안녕하세요! 비전공자이지만 <strong>AI 기술과 기획</strong> 분야에 깊은 관심을 가지고 있어, 제 진로를 이쪽으로 멋지게 설계해보고자 이번 챌린지에 지원하게 되었습니다. <br><br>
+            도전하는 마음으로 참여한 만큼, 최대한 많은 것을 배우고 흡수해갈 수 있도록 열정을 다해 열심히 하겠습니다!
+        </div>
+        <div class="capabilities">
+            <span class="tag">💡 Artificial Intelligence</span>
+            <span class="tag">📊 Product Planning</span>
+            <span class="tag">🏗️ Architectural Eng.</span>
+            <span class="tag">🔥 Passionate</span>
+        </div>
+        <button class="connect-btn" onclick="alert('반갑습니다!')">Connect with Me</button>
+    </div>
+</body>
+</html>
